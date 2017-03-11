@@ -1,0 +1,300 @@
+/******************* 
+******* Navbar *****
+*******************/
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .navbar + .docs-section {
+        border-top-width: 0;
+    }
+
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-spacer {
+        display: none;
+    }
+
+    .navbar > .container {
+        width: 100%;
+    }
+
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    .navbar-item {
+        position: relative;
+        margin-bottom: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 25px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222;
+    }
+
+    .navbar-link.active {
+        color: #33C3F0;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .navbar + .docs-section {
+        border-top-width: 0;
+    }
+
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-spacer {
+        display: none;
+    }
+
+    .navbar > .container {
+        width: 100%;
+    }
+
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 30px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222;
+    }
+
+    .navbar-link.active {
+        color: #33C3F0;
+    }
+
+    .example-send-yourself-copy {
+        float: right;
+        margin-top: 12px;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .navbar + .docs-section {
+        border-top-width: 0;
+    }
+
+    .navbar,
+    .navbar-spacer {
+        display: block;
+        width: 100%;
+        height: 6.5rem;
+        background: #fff;
+        z-index: 99;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar-spacer {
+        display: none;
+    }
+
+    .navbar > .container {
+        width: 100%;
+    }
+
+    .navbar-list {
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    .navbar-item {
+        position: relative;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .navbar-link {
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        margin-right: 35px;
+        text-decoration: none;
+        line-height: 6.5rem;
+        color: #222;
+    }
+
+    .navbar-link.active {
+        color: #33C3F0;
+    }
+
+    .has-docked-nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .has-docked-nav .navbar-spacer {
+        display: block;
+    }
+
+    /* Re-overiding the width 100% declaration to match size of % based container */
+    .has-docked-nav .navbar > .container {
+        width: 80%;
+    }
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    h1 { font-size: 3.5rem; }
+    h2 { font-size: 3.0rem; }
+    h3 { font-size: 2.6rem; }
+    h4 { font-size: 2.0rem; }
+    h5 { font-size: 1.4rem; }
+    h6 { font-size: 0.5rem; }
+}
+
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    h1 { font-size: 4.2rem; }
+    h2 { font-size: 3.6rem; }
+    h3 { font-size: 3.0rem; }
+    h4 { font-size: 2.4rem; }
+    h5 { font-size: 1.5rem; }
+    h6 { font-size: 0.75rem; }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    h1 { font-size: 5.0rem; }
+    h2 { font-size: 4.2rem; }
+    h3 { font-size: 3.6rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 2.4rem; }
+    h6 { font-size: 1.5rem; }
+}
+
+.author-thumb {
+    width: 130px;
+    height: 125px;
+}
+
+.book-thumb-header {
+    width: 100%;
+    height: auto;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .book-thumb-header {
+        display: none;
+    }
+}
+
+.book-desc {
+    margin-bottom: 20px;
+}
+
+.book-thumb {
+    float: right;
+    width: 100px;
+    height: 100%;
+    padding: 5px;
+}
+
+.social-icons {
+    width: 32px;    
+    height: 32px;    
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.alert-container {
+    width: 220px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    vertical-align: bottom
+}
+
+.alert {
+    width: 200px;
+    margin-top: 15px;
+    padding: 15px 10px;
+    border: 1px solid rgb(48, 57, 66);
+    border-radius: 4px;
+    vertical-align: bottom
+}
+
+.alert-warning {
+    border-color: #D49853
+}
+
+.alert-error {
+    border-color: #B94A48
+}
+
+/************************
+**** Utility Classes ****
+************************/
+.mr-top-10 {
+    margin-top: 10px
+}
+
+.mr-bot-10 {
+    margin-bottom: 10px
+}
+
+.pd-top-10 {
+    padding-top: 10px
+}
+
+.pd-bot-10 {
+    padding-bottom: 10px
+}
